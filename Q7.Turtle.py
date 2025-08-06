@@ -1,0 +1,22 @@
+import turtle
+def draw(size):
+    for i in range(3):
+        my_turtle.forward(size)
+        my_turtle.left(120)
+wn = turtle.Screen()
+wn.bgcolor("white")
+wn.title("My Turtle equilateral triangle")
+my_turtle = turtle.Turtle()
+my_turtle.pencolor("yellow")
+my_turtle.pensize(10)
+my_turtle.color("black")
+draw(150)
+my_turtle.penup()
+my_turtle.backward(260)
+my_turtle.pendown()
+draw(250)
+my_turtle.penup()
+my_turtle.backward(370)
+my_turtle.pendown()
+draw(350)
+turtle.done()
